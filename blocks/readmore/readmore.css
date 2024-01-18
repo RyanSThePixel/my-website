@@ -1,0 +1,22 @@
+/* Style for Read More link */
+.read-more-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007BFF;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+.read-more-link:hover {
+    color: #0056b3;
+}
+
+.row-content {
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+}
+
+.row-content.expanded {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
