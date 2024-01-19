@@ -1,25 +1,29 @@
-.readmore-wrapper {
-    max-height: 100px; /* Set the maximum height for the summary */
-    overflow: visible;
-    transition: max-height 0.3s ease; /* Add a smooth transition effect */
-    position: sticky;
+.read-more-container .content-container {
+    position: relative;
 }
 
-.readmore-wrapper.expanded {
-    max-height: none; /* Allow full content when expanded */
-}
-.readmore{
-    position: sticky;
-}
-.full-content {
-    position: absolute;
-    z-index: 1;
-    margin-bottom: 20px;
-    background-color: #fff;
-    padding: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+.read-more-container .content-container .full-content {
+    overflow: hidden;
+    max-height: 100px; /* Adjust as needed */
+    word-wrap: break-word;
+    transition: max-height 0.3s ease;
 }
 
-.content-3{
-    align-content: center;
+.read-more-container .content-container .full-content.show-full-content {
+    max-height: none;
+}
+
+.read-more-container .content-container button {
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: transparent;
+    color: black;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: underline;
 }
