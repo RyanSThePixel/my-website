@@ -14,16 +14,22 @@
 }
 
 .read-more-container .content-container button {
-    position: fixed;
+    position: relative;
+    top: 20px;
     bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
     background-color: transparent;
     color: black;
     border: none;
-    padding: 0;
+    padding: 5px 10px; /* Adjust padding as needed */
     margin: 0;
+    font-size: 1.1em; /* Adjust the font size as needed */
     font-weight: bold;
     cursor: pointer;
     text-decoration: underline;
+    width: auto;
+    display: inline-block;
+    box-sizing: content-box;
 }
+

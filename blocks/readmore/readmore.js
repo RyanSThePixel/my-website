@@ -39,6 +39,6 @@ function toggleReadMore(fullContent, readMoreButton) {
         readMoreButton.innerText = 'Read More';
     } else {
         fullContent.classList.add('show-full-content');
-        readMoreButton.innerText = 'Show Less';
+        readMoreButton.innerText = 'Read Less';
     }
 }
